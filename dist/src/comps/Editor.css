@@ -1,0 +1,45 @@
+.CodeMirror {
+    height: 100% !important;
+}
+
+.editor__container {
+    flex-grow: 1;
+    flex-basis: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    background: hsl(255, 6%, 25%);
+}
+
+.collapsed {
+    flex-grow: 0;
+}
+
+.editor__container.collapsed .CodeMirror-scroll {
+    position: absolute;
+    overflow: hidden !important;
+}
+
+.editor__title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    color: #fff;
+    background: hsl(255, 6%, 13%);
+}
+
+.editor__btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.editor__controlled {
+    flex-grow: 1;
+    border-radius: 0 0 0.5rem 0.5rem;
+    background: hsl(255, 6%, 25%);
+    overflow: hidden;
+}
